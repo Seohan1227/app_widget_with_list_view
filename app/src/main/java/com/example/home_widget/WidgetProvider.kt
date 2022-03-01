@@ -6,7 +6,6 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.widget.RemoteViews
 
 
@@ -22,9 +21,6 @@ class WidgetProvider : AppWidgetProvider() {
         appWidgetIds: IntArray?) {
         appWidgetIds?.forEach { appWidgetId ->
             val serviceIntent = Intent(context, MyRemoteViewsService::class.java)
-            serviceIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
-            serviceIntent.data = Uri.parse(serviceIntent.toUri(Intent.URI_INTENT_SCHEME))
-
             val remoteViews = RemoteViews(context?.packageName, R.layout.app_widget)
             remoteViews.setRemoteAdapter(R.id.listViewAppWidget, serviceIntent)
             remoteViews.setPendingIntentTemplate(R.id.listViewAppWidget,goActivity(context))
