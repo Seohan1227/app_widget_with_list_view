@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/82102/home_widget/app/src/main/res/drawable/stroke.xml" value="0.198" />
+        <entry key="..\:/Users/82102/home_widget/app/src/main/res/drawable/stroke_white.xml" value="0.198" />
         <entry key="..\:/Users/82102/home_widget/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
-        <entry key="..\:/Users/82102/home_widget/app/src/main/res/layout/home_widget.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/82102/home_widget/app/src/main/res/layout/app_widget_item.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/82102/home_widget/app/src/main/res/layout/home_widget.xml" value="0.25" />
         <entry key="..\:/Users/82102/home_widget/app/src/main/res/xml/widget_provider.xml" value="0.1712962962962963" />
       </map>
     </option>

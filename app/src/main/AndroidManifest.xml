@@ -30,6 +30,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_provider"/>
         </receiver>
+        <service android:name=".MyRemoteViewsService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
 
     </application>
 
